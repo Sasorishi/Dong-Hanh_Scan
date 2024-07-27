@@ -35,6 +35,22 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
+## EAS
+
+```bash
+eas build --platform android --profile development
+```
+
+```bash
+eas build --platform ios --profile development
+```
+
+```bash
+brew install bundletool
+bundletool build-apks --bundle=app-release.aab --output=app-release.apks --mode=universal
+bundletool install-apks --apks=app-release.apks
+```
+
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:
